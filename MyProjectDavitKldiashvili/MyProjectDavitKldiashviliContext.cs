@@ -7,9 +7,9 @@ namespace MyProjectDavitKldiashvili
 {
     public class MyProjectDavitKldiashviliContext : DbContext
     {
-        public DbSet<Organizacion> Organizaions { get; set; }
+        public DbSet<Organization> Organizaions { get; set; }
         public DbSet<Person> Persons { get; set; }
-
+        public object Organizations { get; internal set; }
 
         public MyProjectDavitKldiashviliContext()
         {
@@ -24,11 +24,9 @@ namespace MyProjectDavitKldiashvili
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new OrganizacionConfiguration());
+            modelBuilder.ApplyConfiguration(new OrganizationConfiguration());
             modelBuilder.ApplyConfiguration(new PersonConfigurations());
             
         }
     }
-
-    
 }

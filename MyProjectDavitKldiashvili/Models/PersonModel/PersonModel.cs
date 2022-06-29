@@ -1,9 +1,10 @@
-﻿using MyProjectDavitKldiashvili.Enums;
+﻿using MyProjectDavitKldiashvili.Entities;
+using MyProjectDavitKldiashvili.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace MyProjectDavitKldiashvili.Entities
+namespace MyProjectDavitKldiashvili.Models
 {
-    public class Person
+    public class PersonModel
     {
         public Guid Id { get; set; }
 
@@ -26,6 +27,5 @@ namespace MyProjectDavitKldiashvili.Entities
         public Guid OrganizationId { get; set; }
 
         public Organization? Organization { get; set; }
-
     }
 }

@@ -1,9 +1,11 @@
-﻿using MyProjectDavitKldiashvili.Enums;
+﻿using MyProjectDavitKldiashvili.Entities;
+using MyProjectDavitKldiashvili.Enums;
 using System.ComponentModel.DataAnnotations;
 
-namespace MyProjectDavitKldiashvili.Entities
+namespace MyProjectDavitKldiashvili.Models
 {
-    public class Person
+
+    public class CreatePersonRequest
     {
         public Guid Id { get; set; }
 

@@ -9,7 +9,7 @@ namespace MyProjectDavitKldiashvili.EntityConfigurations
         public void Configure(EntityTypeBuilder<Person> builder)
         {
             builder.HasKey(x => x.Id);
-            builder.HasOne(x => x.Organizacion);
+            builder.HasOne(x => x.Organization);
         }
     }
 }

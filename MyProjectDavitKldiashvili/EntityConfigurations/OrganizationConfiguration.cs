@@ -4,9 +4,9 @@ using MyProjectDavitKldiashvili.Entities;
 
 namespace MyProjectDavitKldiashvili.EntityConfigurations
 {
-    public class OrganizacionConfiguration : IEntityTypeConfiguration<Organizacion>
+    public class OrganizationConfiguration : IEntityTypeConfiguration<Organization>
     {
-        public void Configure(EntityTypeBuilder<Organizacion> builder)
+        public void Configure(EntityTypeBuilder<Organization> builder)
         {
             builder.HasKey(x => x.Id);
         }
